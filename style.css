@@ -1,0 +1,35 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+#main{
+	margin: 50px 30%;
+	background-color: blue;
+	border: 1px solid black;
+}
+
+.in{
+	margin: 20px 20% 0 20%; 
+}
+
+#datahere{
+	margin: 50px 40%;
+	background-color: red;
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+th{
+	border: 1px solid black;
+	border-collapse: collapse;
+	text-align: center;
+	padding: 5px 10px;
+}
+
+td{
+	border: 1px solid black;
+	border-collapse: collapse;
+	padding: 5px 10px;
+	text-align: center;
+}

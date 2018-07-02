@@ -1,0 +1,22 @@
+{
+	"login": [{
+			"username": "abc",
+			"password": "123"
+		},
+		{
+			"username": "xyz",
+			"password": "xyz"
+		}
+	],
+	"data": [{
+			"age": 25,
+			"height": 5.6,
+			"address": "delhi"
+		},
+		{
+			"age": 23,
+			"height": 6,
+			"address": "noida"
+		}
+	]
+}
