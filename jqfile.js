@@ -1,5 +1,4 @@
 $(function(){
-	$("table").hide();
 	$("form").submit(function(){
 		var username = $("#username").val();
 		var password = $("#password").val();
@@ -11,8 +10,8 @@ $(function(){
 				var login = false;
 				$.each(data["login"], function(i,obj){
 					if(username==obj.username && password==obj.password){
-						$("#main").hide();
-						$("table").show();
+						$("#contain").hide();
+						$("table").css("display","inline-block");
 						$("tbody").html("<tr><td>"+obj.username+"</td><td>"+data["data"][i].age +"</td><td>"+data["data"][i].height+"</td><td>"+data["data"][i].address+"</td></tr>")
 						login = true;
 					}
