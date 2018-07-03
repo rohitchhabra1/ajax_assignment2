@@ -3,15 +3,19 @@
 <head>
 	<title>ajax assignment2</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 </head>
 <body>
 	<div id="contain">
 		<div id="main">
 			<form method="post">
 				<div class="in">
+					<i class="material-icons">person</i>
 					<input type="text" name="username" id="username" placeholder="Username">
 				</div>
 				<div class="in">
+					<i class="material-icons">lock</i>
 					<input type="password" name="password" id="password" placeholder="Password">
 				</div>	
 				<div class="in">
@@ -19,18 +23,25 @@
 				</div>
 			</form>
 		</div>
+		<div id="links">
+			<a id="link1" href="">Create Account</a>
+			<a id="link2" href="">Forgot Password</a>
+		</div>
 	</div>
-	<table id="datahere">
-		<thead>
-			<tr>
-				<th>USERNAME</th>
-				<th>AGE</th>
-				<th>HEIGHT</th>
-				<th>ADDRESS</th>
-			</tr>
-		</thead>
-		<tbody></tbody>
-	</table>
+	<div id="loggedin">
+		<table id="datahere">
+			<thead>
+				<tr>
+					<th>USERNAME</th>
+					<th>AGE</th>
+					<th>HEIGHT</th>
+					<th>ADDRESS</th>
+				</tr>
+			</thead>
+			<tbody></tbody>
+		</table>
+		<button id="logout">Logout</button>
+	</div>
 	<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
 	<script type="text/javascript" src="jqfile.js"></script>
 </body>
