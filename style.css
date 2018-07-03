@@ -3,34 +3,36 @@
 	padding: 0;
 	font-family: sans-serif;
 }
-#contain{
-	margin: 25px 36%;
-	overflow: auto;
-	background-image: url('images.jpeg');
+body{
+	background-image: url('backgroundimage.jpg');
 	background-repeat: no-repeat;
-	background-size: 100% 100%;
+	background-size: 100% auto;
+}
+#contain{
+	width: 32%;
+	margin:0 auto;
+	overflow: auto;
+	height: 100vh;
 }
 #tick{
-    margin: 100px auto 0 auto;
-    width: 50%;
-	text-align: center;
+    margin: 20vh auto 0 auto;
+    width: 35%;
 }
-#tick i{    
-	color: #ab74c1;
-    font-size: 9em;
+#tick img{
+	width: 100%;
 }
 #main{
-	margin: 100px 10% 70px 10%;
+	margin: 20vh 10% 7.5vh 10%;
 	background-color: white;
 }
 #links{
-	margin: 0 10% 20px 10%;
+	margin: 0 10% 2vh 10%;
+	overflow: auto;
 }
 #main i{
 	color: #b5bfcc;
     vertical-align: middle;
-    margin: 0 2%;
-    font-size: 30px;
+    margin-left: 5%;
 }
 input{
 	width: 70%;
@@ -49,15 +51,18 @@ button{
 	border-style: none;
 	background-color: #ab74c1;
 	color: white;
+	cursor: pointer;
 }
 a{
 	color: white;
 	text-decoration: none;
-	font-size: 70%;
+	font-size: 90%;
+}
+#link1{
+	float: left;
 }
 #link2{
 	float: right;
-	margin-top: 4px;
 }
 #loggedin{
 	display: none;
