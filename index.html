@@ -2,23 +2,23 @@
 <html>
 <head>
 	<title>ajax assignment2</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
 </head>
 <body>
 	<div id="contain">
 		<div id="tick">
 			<img src="logo.png">
 		</div>
+		<div id="errormessage"></div>
 		<div id="main">
 			<form method="post">
 				<div class="in">
-					<i class="material-icons">person</i>
+					<img src="user.png">
 					<input type="text" name="username" id="username" placeholder="Username">
 				</div>
 				<div class="in">
-					<i class="material-icons">lock</i>
+					<img src="pass.png">
 					<input type="password" name="password" id="password" placeholder="Password">
 				</div>	
 				<div class="in">
@@ -47,6 +47,7 @@
 		<button id="logout">Logout</button>
 	</div>
 	<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="jquery.validate.min.js"></script>
 	<script type="text/javascript" src="jqfile.js"></script>
 </body>
 </html>

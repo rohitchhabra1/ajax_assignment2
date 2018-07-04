@@ -6,33 +6,43 @@
 body{
 	background-image: url('backgroundimage.jpg');
 	background-repeat: no-repeat;
-	background-size: 100% auto;
+	background-size: cover;
 }
 #contain{
-	width: 32%;
-	margin:0 auto;
+	max-width: 300px;
+	margin: 0 auto;
+	padding: 0 10px;
 	overflow: auto;
-	height: 100vh;
+	min-height: 100vh;
 }
 #tick{
-    margin: 20vh auto 0 auto;
-    width: 35%;
+    margin:120px auto;
+    width: 40%;
 }
 #tick img{
 	width: 100%;
 }
+#errormessage{
+	color: #FB3A3A;
+
+}
 #main{
-	margin: 20vh 10% 7.5vh 10%;
+	margin-bottom: 70px;
 	background-color: white;
 }
+.in{
+	width: 100%;
+}
 #links{
-	margin: 0 10% 2vh 10%;
+	margin-bottom: 15px;
 	overflow: auto;
 }
-#main i{
-	color: #b5bfcc;
-    vertical-align: middle;
-    margin-left: 5%;
+#main img{
+	width: 6%;
+	margin: 0 5%;
+}
+.error{
+	color: #FB3A3A;
 }
 input{
 	width: 70%;
@@ -56,7 +66,7 @@ button{
 a{
 	color: white;
 	text-decoration: none;
-	font-size: 90%;
+	font-size: 14px;
 }
 #link1{
 	float: left;

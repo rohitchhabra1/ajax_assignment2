@@ -4,11 +4,33 @@ $(function(){
 		var password = localStorage.getItem('password');
 		loadfile(username, password);
 	}
-	$("form").submit(function(){
-		username = $("#username").val();
-		var password = $("#password").val();
-		loadfile(username, password);
-		return false;
+	$('input').focus(function(){
+		$('#errormessage').html('');
+	});
+	$("form").validate({
+		rules:{
+			username:{
+				required:true
+			},
+			password:{
+				required:true,
+				minlength:3
+			}
+		},
+		messages:{
+			username: "This field is required",
+			password: {
+				required:"This field is required",
+				minlength:"Password minlength 3 characters"
+			}
+		},
+		submitHandler: function(form) {
+			console.log('2');
+			username = $("#username").val();
+			var password = $("#password").val();
+			loadfile(username, password);
+			return false;
+	  	}
 	});
 	$("#logout").click(function(){
 		localStorage.clear();
@@ -20,6 +42,7 @@ function loadfile(username, password){
 		type: "GET",
 		url: "data.json",
 		dataType: 'json',
+		cache: true,
 		success: function(data){
 			var login = false;
 			$.each(data["login"], function(i,obj){
@@ -33,7 +56,7 @@ function loadfile(username, password){
 				}
 			});
 			if(!login){
-				alert("username and password donot match");
+				$("#errormessage").html("username and password donot match");	
 			}
 		},
 		error: function(){
