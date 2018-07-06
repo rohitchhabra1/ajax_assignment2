@@ -8,6 +8,11 @@ body{
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+#map{
+	margin-top: 50px;
+	width: 100%;
+	height: 300px;
+}
 #contain{
 	max-width: 300px;
 	margin: 0 auto;
@@ -23,7 +28,15 @@ body{
 	width: 100%;
 }
 #errormessage{
-	color: #FB3A3A;
+	background-color: #ab74c1;
+	color: white;
+	padding: 10px;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	visibility: hidden;
+	cursor: pointer;
+}
+#errormessage b{
 
 }
 #main{
@@ -40,9 +53,6 @@ body{
 #main img{
 	width: 6%;
 	margin: 0 5%;
-}
-.error{
-	color: #FB3A3A;
 }
 input{
 	width: 70%;
@@ -75,23 +85,37 @@ a{
 	float: right;
 }
 #loggedin{
+	max-width: 310px;
 	display: none;
-	margin: 50px 36%;
+	margin: 50px auto;
+}
+#loggedin button{
+	margin-top: 50px;
 }
 #datahere{
+	margin: auto;
+	color: #ab74c1;
 	background-color: white;
-	border: 1px solid black;
-	border-collapse: collapse;
+	font-size: 120%;
+	width: 100%;
+}
+thead{
+	float: left;
 }
 th{
-	border: 1px solid black;
-	border-collapse: collapse;
-	text-align: center;
-	padding: 5px 10px;
+	display: block;
+	text-align: left;
+	padding: 5px 5px 5px 20px;
+}
+tbody{
+	float: left;
+}
+tbody tr{
+	float: left;
+	display: block;
 }
 td{
-	border: 1px solid black;
-	border-collapse: collapse;
-	padding: 5px 10px;
-	text-align: center;
+	display: block;
+	text-align: left;
+	padding: 5px 5px 5px 20px;
 }
