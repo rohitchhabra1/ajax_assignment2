@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ajax assignment2</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div id="contain">
+		<div id="tick">
+			<img src="logo.png">
+		</div>
+		<div id="errormessage">go on type...</div>
+		<div id="main">
+			<form method="post">
+				<div class="in">
+					<img src="user.png">
+					<input type="text" name="username" id="username" placeholder="Username">
+				</div>
+				<div class="in">
+					<img src="pass.png">
+					<input type="password" name="password" id="password" placeholder="Password">
+				</div>	
+				<div class="in">
+					<button type="submit">Sign In</button>
+				</div>
+			</form>
+		</div>
+		<div id="links">
+			<a id="link1" href="">Create Account</a>
+			<a id="link2" href="">Forgot Password</a>
+		</div>
+	</div>
+	</div>
+	<div id="loggedin">
+		<table id="datahere">
+			<thead>
+				<tr>
+					<th>USERNAME :</th>
+					<th>AGE :</th>
+					<th>HEIGHT :</th>
+					<th>ADDRESS :</th>
+				</tr>
+			</thead>
+			<tbody></tbody>
+		</table>
+		<div id="map"></div>
+		<button id="logout">Logout</button>
+	</div>
+	<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="jquery.validate.min.js"></script>
+	<script type="text/javascript" src="jqfile.js"></script>
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDLtEn12_C9eLZN4wx2_oK9Qy61uY1oOKY&callback=initMap"></script>
+</body>
+</html>

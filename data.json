@@ -1,0 +1,29 @@
+{
+	"login": [{
+			"username": "abc",
+			"password": "123"
+		},
+		{
+			"username": "xyz",
+			"password": "xyz"
+		}
+	],
+	"data": [{
+			"age": 25,
+			"height": 5.6,
+			"address": "delhi",
+			"content": "abcliveshere Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+			"lat":28.6153829,
+			"lng":77.2056253
+			
+		},
+		{
+			"age": 23,
+			"height": 6,
+			"address": "noida",
+			"lat":28.6021493,
+			"lng":77.2599168,
+			"content":"xyz lives here.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." 
+		}
+	]
+}
