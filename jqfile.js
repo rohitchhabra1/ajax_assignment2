@@ -84,6 +84,6 @@ function loadfile(username, password){
 }
 function initMap(){
 	var center = {lat: 28.5795603,lng: 77.3606211};
-	map = new google.maps.Map(document.getElementById("map"),{zoom:13, center:center,disableDoubleClickZoom: true});
+	map = new google.maps.Map(document.getElementById("map"),{zoom:13,draggable:false, center:center,disableDoubleClickZoom: true});
 
 }
