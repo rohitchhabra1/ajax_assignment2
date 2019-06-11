@@ -1,6 +1,7 @@
 $(function(){
 	var latitude, longitude;
 	var map, marker, con, address, infowindow;
+	var position;
 	if (localStorage.getItem('username')){
 		var username = localStorage.getItem('username');
 		var password = localStorage.getItem('password');
@@ -35,7 +36,6 @@ function loadfile(username, password){
 		cache: true,
 		success: function(data){
 			var login = false;
-			var position;
 			$.each(data["login"], function(i,obj){
 				if(username==obj.username && password==obj.password){
 					$("#contain").hide();
@@ -62,6 +62,19 @@ function loadfile(username, password){
         	marker.addListener('click', function() {
         		infowindow.open(map, marker);
           	});		
+          	var i=true;
+          	google.maps.event.addListener(map,'click',function(event) {   
+          		marker.setPosition({lat:event.latLng.lat(), lng:event.latLng.lng()});   
+          		if(i){        
+	            	$("table tr").first().append("<th>latitude</th><th>longitude</th>");
+	            	$("table tr").last().append("<td id='lat'>"+event.latLng.lat().toPrecision(6)+"</td>"+"<td id='lng'>"+event.latLng.lng().toPrecision(6)+"</td>");
+           			i=false;
+           		}else{
+           			$("#lat").html(event.latLng.lat().toPrecision(6));
+           			$("#lng").html(event.latLng.lng().toPrecision(6));
+           		}
+
+            });
 			
 		},
 		error: function(){
@@ -71,5 +84,6 @@ function loadfile(username, password){
 }
 function initMap(){
 	var center = {lat: 28.5795603,lng: 77.3606211};
-	map = new google.maps.Map(document.getElementById("map"),{zoom:13, center:center});
+	map = new google.maps.Map(document.getElementById("map"),{zoom:13,draggable:false, center:center,disableDoubleClickZoom: true});
+
 }
